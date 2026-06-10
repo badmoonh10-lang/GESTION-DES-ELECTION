@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<daveelection_backup generated_at="2026-06-10T20:05:10+02:00" reason="close_list">
+  <table name="settings">
+    <row>
+      <column name="id">8</column>
+      <column name="key_name">list_closed</column>
+      <column name="key_value">1</column>
+    </row>
+  </table>
+  <table name="users">
+    <row>
+      <column name="id">1</column>
+      <column name="username">direction</column>
+      <column name="password_hash">$2y$10$xP1ENa7h6VV/oKPcAs/ifejVVslw7LEcKaBezFs1LfZukIzZefH/y</column>
+      <column name="role">DIRECTION</column>
+      <column name="created_at">2026-06-10 16:00:16</column>
+    </row>
+    <row>
+      <column name="id">2</column>
+      <column name="username">agent</column>
+      <column name="password_hash">$2y$10$4B.pA6DMXW7Fa9Umgdy58.KN2TKVXmisLvkR.XFKzP.ve/K0J3ssu</column>
+      <column name="role">AGENT</column>
+      <column name="created_at">2026-06-10 16:00:16</column>
+    </row>
+    <row>
+      <column name="id">3</column>
+      <column name="username">electeur</column>
+      <column name="password_hash">$2y$10$kGQdiXdG0N0xQsyoNoViN.f.YjZMyGkGt5MtaptPNJbYim/z0n5.m</column>
+      <column name="role">ELECTOR</column>
+      <column name="created_at">2026-06-10 16:00:16</column>
+    </row>
+    <row>
+      <column name="id">4</column>
+      <column name="username">steveA</column>
+      <column name="password_hash">$2y$10$whJR8yu014qweZEQTaj2QueDq2rf1se/F8hjwodylW9ay6AIBdCSe</column>
+      <column name="role">AGENT</column>
+      <column name="created_at">2026-06-10 16:01:28</column>
+    </row>
+    <row>
+      <column name="id">5</column>
+      <column name="username">agentdave</column>
+      <column name="password_hash">$2y$10$jPgDx6v12q5cr8OuXYpRG.r.BwLTJpvodijCt3cRe0v7k7vMM7xvm</column>
+      <column name="role">AGENT</column>
+      <column name="created_at">2026-06-10 17:31:46</column>
+    </row>
+  </table>
+  <table name="electors">
+    <row>
+      <column name="id">1</column>
+      <column name="user_id">3</column>
+      <column name="nom">DOE</column>
+      <column name="prenom">John</column>
+      <column name="genre">M</column>
+      <column name="age">30</column>
+      <column name="cni">CNI-DEMO-001</column>
+      <column name="profile_photo" null="true"/>
+      <column name="created_at">2026-06-10 16:00:16</column>
+      <column name="updated_at" null="true"/>
+    </row>
+  </table>
+  <table name="enrollments">
+    <row>
+      <column name="id">1</column>
+      <column name="dossier_code">DOS-000001</column>
+      <column name="elector_id">1</column>
+      <column name="created_by_role">ONLINE</column>
+      <column name="created_by_user_id">3</column>
+      <column name="status">APPROVED</column>
+      <column name="direction_comment"></column>
+      <column name="submitted_at">2026-06-10 16:00:16</column>
+      <column name="reviewed_at">2026-06-10 16:02:17</column>
+      <column name="approved_at">2026-06-10 16:02:17</column>
+      <column name="rejected_at" null="true"/>
+      <column name="created_at">2026-06-10 16:00:16</column>
+    </row>
+  </table>
+  <table name="attachments"/>
+  <table name="cards">
+    <row>
+      <column name="id">1</column>
+      <column name="enrollment_id">1</column>
+      <column name="qr_code">storage/qr/qr_DOS-000001.png</column>
+      <column name="lieu">IUT-Fv Bandjoun</column>
+      <column name="signature_path">assets/img/signature.png</column>
+      <column name="generated_at">2026-06-10 16:02:17</column>
+    </row>
+  </table>
+  <table name="field_agents">
+    <row>
+      <column name="id">2</column>
+      <column name="user_id">4</column>
+      <column name="matricule">AGT-000002</column>
+      <column name="nom">steve</column>
+      <column name="prenom">agent</column>
+      <column name="genre">M</column>
+      <column name="age">45</column>
+      <column name="cni">STEVEAGENT123</column>
+      <column name="profile_photo">storage/uploads/AGT_2_6b5e27cb8e0f.png</column>
+      <column name="bureau_vote">Amphi A</column>
+      <column name="created_at">2026-06-10 16:01:28</column>
+      <column name="updated_at">2026-06-10 17:08:34</column>
+    </row>
+    <row>
+      <column name="id">3</column>
+      <column name="user_id">5</column>
+      <column name="matricule">AGT-000003</column>
+      <column name="nom">dave</column>
+      <column name="prenom">agent</column>
+      <column name="genre">M</column>
+      <column name="age">67</column>
+      <column name="cni">daveagent123</column>
+      <column name="profile_photo">storage/uploads/AGT_NEW_a6bb29f30527.png</column>
+      <column name="bureau_vote">Amphi B</column>
+      <column name="created_at">2026-06-10 17:31:46</column>
+      <column name="updated_at" null="true"/>
+    </row>
+  </table>
+  <table name="agent_cards">
+    <row>
+      <column name="id">2</column>
+      <column name="field_agent_id">2</column>
+      <column name="qr_code">AGT-000002</column>
+      <column name="lieu">IUT-Fv Bandjoun</column>
+      <column name="signature_path">assets/img/signature.png</column>
+      <column name="generated_at">2026-06-10 16:01:28</column>
+    </row>
+    <row>
+      <column name="id">4</column>
+      <column name="field_agent_id">3</column>
+      <column name="qr_code">AGT-000003</column>
+      <column name="lieu">IUT-Fv Bandjoun</column>
+      <column name="signature_path">assets/img/signature.png</column>
+      <column name="generated_at">2026-06-10 17:31:46</column>
+    </row>
+  </table>
+  <table name="candidates"/>
+  <table name="votes"/>
+</daveelection_backup>

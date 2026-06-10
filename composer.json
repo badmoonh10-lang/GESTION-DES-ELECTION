@@ -1,0 +1,16 @@
+{
+    "name": "kalifmohamed/test-electeur",
+    "autoload": {
+        "psr-4": {
+            "Kalifmohamed\\TestElecteur\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "habib rahaman dave derick"
+        }
+    ],
+    "require": {
+        "setasign/fpdf": "^1.8"
+    }
+}
